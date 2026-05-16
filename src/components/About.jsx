@@ -53,11 +53,14 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a Jayant Sunil Potdar. A Full Stack Web developer with experience in
-        HTML, CSS, and JavaScript, and expertise in frameworks like React, and
-        Bootstrap. I'm a quick learner and to create efficient, scalable, and
-        user-friendly solutions that solve real-world problems. Let's work
-        together to bring our ideas to life!
+        Results-driven Frontend Developer with 3.5 years of experience designing
+        and developing modern web applications across fintech, telecommunications,
+        and education industries. Proficient in JavaScript, TypeScript, and PHP,
+        with hands-on expertise in Vue 3, Nuxt 3, Angular, React, Next.js, and
+        Laravel. Experienced in transforming complex UI/UX designs into responsive,
+        accessible interfaces and integrating frontend applications with RESTful
+        and GraphQL APIs. Fast learner, detail-oriented, and consistently
+        delivering high-quality code.
       </motion.p>
       <button
         ref={resumeButtonRef}
@@ -65,14 +68,14 @@ const About = () => {
         className="mt-10 px-6 py-3 text-white bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-md shadow-md hover:bg-gradient-to-r hover:from-cyan-600 hover:to-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
         onClick={() =>
           window.open(
-            "https://drive.google.com/file/d/1JXxclNaQDOGD9BauEy1jS9XDYk5QsaMa/view?usp=sharing",
+            "https://linkedin.com/in/muhammad-farhan-ana/",
             "_blank"
           )
         }
       >
         <span className="font-semibold flex gap-1.5 items-center">
           <RiBriefcase4Fill />
-          Download Resume
+          View LinkedIn
         </span>
       </button>
       <div className="mt-12 flex flex-wrap gap-10">

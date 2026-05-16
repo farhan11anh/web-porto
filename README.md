@@ -1,29 +1,26 @@
-# 🚀 3D Portfolio Website
+# 🚀 3D Portfolio — Muhammad Farhan Ananto
 
-Welcome to my immersive 3D portfolio website! This project showcases my skills, projects, and creativity through stunning 3D animations, interactive elements, and smooth motion design. Experience a cosmic journey through space-themed design with cutting-edge web technologies.
-
-![Portfolio Preview](https://github.com/Jayant-1/3D-Portfolio/blob/main/public/assets/nav-link-previews/home.png?raw=true)
-
+Welcome to my immersive 3D portfolio website! This project showcases my skills, projects, and experience as a Frontend Developer with 3.5+ years across fintech, telecommunications, and education industries.
 
 ## ✨ Features
 
 ### 🎮 Interactive 3D Elements
 
-- **Custom 3D Keyboard**: Interactive Spline-powered keyboard with skills as keycaps that reveal titles and descriptions on hover
+- **Custom 3D Keyboard**: Interactive Spline-powered keyboard with skills as keycaps
 - **3D Models**: Desktop PC, Earth, and other 3D assets using Three.js and React Three Fiber
 - **Particle Systems**: Dynamic star field background creating an immersive space environment
-- **Elastic Cursor**: Custom cursor with physics-based animations for enhanced interactivity
+- **Elastic Cursor**: Custom cursor with physics-based animations
 
 ### 🎨 Visual & Animation
 
-- **Smooth Animations**: Powered by GSAP and Framer Motion for fluid scroll animations, hover effects, and element reveals
-- **Space Theme**: Dark cosmic background with particle effects and stellar animations
+- **Smooth Animations**: Powered by GSAP and Framer Motion
+- **Space Theme**: Dark cosmic background with electric blue accent palette
 - **Preloader**: Engaging loading screen with custom animations
 - **Easter Eggs**: Hidden interactive elements for curious visitors
 
 ### 📱 Responsive Design
 
-- **Mobile-First**: Fully responsive across all devices and screen sizes
+- **Mobile-First**: Fully responsive across all devices
 - **Touch Optimized**: Smooth interactions on touch devices
 - **Performance Optimized**: Optimized 3D rendering and animations
 
@@ -32,95 +29,55 @@ Welcome to my immersive 3D portfolio website! This project showcases my skills, 
 - **Hero**: Eye-catching introduction with 3D elements
 - **About**: Personal story and background
 - **Skills**: Interactive 3D keyboard showcasing technical skills
-- **Projects**: Portfolio of work with 3D project cards
-- **Achievements**: Timeline of accomplishments and certifications
+- **Projects**: Portfolio of work with project cards
+- **Achievements**: Timeline of work experience and education
 - **Contact**: Interactive contact form with 3D elements
 
 ## 🛠️ Tech Stack
 
-### Frontend & Framework
-
-- **React 18** - Modern React with hooks and functional components
-- **Vite** - Lightning-fast build tool and development server
-- **React Router DOM** - Client-side routing
-
-### 3D & Graphics
-
-- **Three.js** - 3D graphics library
-- **React Three Fiber** - React renderer for Three.js
-- **React Three Drei** - Useful helpers for React Three Fiber
-- **Spline Runtime** - Interactive 3D design tool integration
-- **Maath** - Mathematical utilities for 3D graphics
-
-### Styling & UI
-
-- **Tailwind CSS** - Utility-first CSS framework
-- **PostCSS** - CSS processing
-- **Autoprefixer** - CSS vendor prefixing
-
-### Animations & Interactions
-
-- **GSAP** - Professional-grade animations
-- **Framer Motion** - Production-ready motion library
-- **React Tilt** - 3D tilt effects
-- **React Vertical Timeline Component** - Timeline animations
-
-### Utilities & Tools
-
-- **React Icons** - Icon library
-- **EmailJS** - Email functionality
-- **Clsx & Tailwind Merge** - Conditional styling utilities
-- **Devtools Detector** - Development tools detection
+- **React 18** + **Vite** — Frontend framework & build tool
+- **Three.js** / **React Three Fiber** / **Spline** — 3D graphics
+- **Tailwind CSS** — Utility-first styling
+- **GSAP** + **Framer Motion** — Animations
+- **EmailJS** — Contact form email integration
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
 - **Node.js** (v16 or higher)
-- **npm** or **yarn** package manager
+- **npm** or **yarn**
 
 ### Installation
 
-1. **Clone the repository:**
+```bash
+git clone <your-repo-url>
+cd 3D-Portfolio
+npm install
+```
 
-   ```bash
-   git clone https://github.com/Jayant-1/3D-Portfolio.git
-   cd 3d-portfolio
-   ```
+### Environment Setup
 
-2. **Install dependencies:**
+Copy `.env.example` to `.env` and fill in your EmailJS credentials:
 
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
+```bash
+cp .env.example .env
+```
 
-3. **Start the development server:**
+Get your keys from [https://www.emailjs.com/](https://www.emailjs.com/)
 
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
+### Development
 
-4. **Open your browser:**
-   Navigate to [http://localhost:5173](http://localhost:5173) to see the magic!
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173)
 
 ### Build for Production
 
 ```bash
 npm run build
-# or
-yarn build
-```
-
-### Preview Production Build
-
-```bash
-npm run preview
-# or
-yarn preview
 ```
 
 ## 📁 Project Structure
@@ -129,103 +86,28 @@ yarn preview
 src/
 ├── components/          # React components
 │   ├── canvas/         # 3D canvas components
-│   │   ├── Ball.jsx
-│   │   ├── Computers.jsx
-│   │   ├── Earth.jsx
-│   │   └── Stars.jsx
 │   ├── preloader/      # Loading screen
-│   ├── ui/            # UI components
-│   ├── About.jsx
-│   ├── Achievement.jsx
-│   ├── Contact.jsx
-│   ├── ElasticCursor.jsx
-│   ├── Feedbacks.jsx
+│   ├── ui/             # UI components
 │   ├── Hero.jsx
-│   ├── Navbar.jsx
+│   ├── About.jsx
+│   ├── Works.jsx
+│   ├── Achievement.jsx
 │   ├── SkillKeyboard.jsx
-│   └── Works.jsx
-├── assets/            # Static assets
-│   ├── achievement/   # Achievement images
-│   ├── badge/        # Skill badges
-│   ├── fonts/        # Custom fonts
-│   └── project/      # Project images
-├── constants/         # Configuration files
-├── hoc/              # Higher-order components
-├── utils/            # Utility functions
-└── styles.js         # Global styles
+│   ├── Contact.jsx
+│   └── Navbar.jsx
+├── assets/             # Static assets
+├── constants/          # Data & configuration
+├── hoc/                # Higher-order components
+├── utils/              # Utility functions
+└── styles.js           # Global styles
 ```
-
-## 🎨 Customization
-
-### Adding New 3D Models
-
-1. Place your 3D models in the `public/` directory
-2. Import and use them in canvas components
-3. Ensure models are optimized for web (glTF format recommended)
-
-### Modifying Animations
-
-- **GSAP Animations**: Edit scroll-triggered animations in component files
-- **Framer Motion**: Modify motion variants in components
-- **3D Animations**: Update Three.js animations in canvas components
-
-### Styling Changes
-
-- **Tailwind Classes**: Modify existing classes or add custom ones
-- **Global Styles**: Update `src/styles.js` for theme changes
-- **Component Styles**: Edit individual component styling
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Vercel will automatically deploy your site
-
-### Other Platforms
-
-- **GitHub Pages**: Deploy using GitHub Actions
-- **Firebase Hosting**: Use Firebase CLI
-- **AWS S3**: Upload built files to S3 bucket
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. **Fork the repository**
-2. **Create a feature branch**: `git checkout -b feature/amazing-feature`
-3. **Commit your changes**: `git commit -m 'Add amazing feature'`
-4. **Push to the branch**: `git push origin feature/amazing-feature`
-5. **Open a Pull Request**
-
-### Development Guidelines
-
-- Follow React best practices
-- Maintain responsive design
-- Optimize 3D performance
-- Add meaningful commit messages
-- Test across different devices
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Spline** for 3D design tools
-- **Three.js** community for 3D graphics
-- **GSAP** for powerful animations
-- **Framer Motion** for React animations
-- **Tailwind CSS** for utility-first styling
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ## 📞 Contact
 
-- **Portfolio**: [https://jayant-1.vercel.app/]
-- **GitHub**: [@Jayant-1](https://github.com/Jayant-1)
-- **LinkedIn**: [Jayant Potdar](https://www.linkedin.com/in/jayant-potdar-880a461b8/)
-- **Email**: jayantpotdar2006@gmail.com
-
----
-
-⭐ **Star this repository if you found it helpful!**
+- **Email**: muhammad.farhan.ana@gmail.com
+- **LinkedIn**: [Muhammad Farhan Ananto](https://linkedin.com/in/muhammad-farhan-ana/)
+- **Location**: Jakarta, Indonesia
